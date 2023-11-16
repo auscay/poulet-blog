@@ -5,24 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Page Title -->
-        <title>Blog | Spyre - Slick contemporary multipurpose theme</title>
+        <title>Blog Single | Spyre - Slick contemporary multipurpose theme</title>
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-        <link rel="manifest" href="img/favicons/site.webmanifest">
-        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#f23838">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/img/favicons/safari-pinned-tab.svg" color="#f23838">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
         <!-- Vendor Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700%7CRoboto:300,400,700" rel="stylesheet">
-        <link href="assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-        <link href="assets/vendor/jquery.mb.vimeo_player/dist/css/jquery.mb.vimeo_player.min.css" rel="stylesheet">
+        <link href="../assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="../assets/vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="../assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 
         <!-- Theme Stylesheets -->
-        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="../assets/css/theme.css" rel="stylesheet">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129313359-1"></script>
@@ -49,8 +50,8 @@
         <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
                 <a class="navbar-brand me-lg-5 me-xl-7" href="../pages/index.html">
-                    <img src="img/logo.png" class="d-none d-lg-block" alt="Spyre" width="130" />
-                    <img src="img/logo.png" class="d-block d-lg-none" alt="Spyre" width="100" />
+                    <img src="../img/logo.png" class="d-none d-lg-block" alt="Spyre" width="130" />
+                    <img src="../img/logo.png" class="d-block d-lg-none" alt="Spyre" width="100" />
                 </a>
 
                 <span class="navbar-text flex-fill d-none d-md-inline-block text-white">
@@ -88,8 +89,8 @@
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li class="dropdown-menu-item"><a href="../pages/home.html" class="dropdown-menu-link">Homepage</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/services.html" class="dropdown-menu-link">Services</a></li>
-                                            <li class="dropdown-menu-item active"><a href="../pages/blog.html" class="dropdown-menu-link">Blog</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/blog-single.html" class="dropdown-menu-link">Blog single</a></li>
+                                            <li class="dropdown-menu-item"><a href="../pages/blog.html" class="dropdown-menu-link">Blog</a></li>
+                                            <li class="dropdown-menu-item active"><a href="../pages/blog-single.html" class="dropdown-menu-link">Blog single</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/portfolio.html" class="dropdown-menu-link">Portfolio</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/about.html" class="dropdown-menu-link">About</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/contact.html" class="dropdown-menu-link">Contact</a></li>
@@ -189,26 +190,23 @@
             <!-- End of Spyrenav Overlay -->
         </header>
         <!-- End of Header -->
-        
 
-
-
-            <!-- Main Content -->
-            <main class="main minh-100vh">
-            @yield('content')
-            </main>
+                <!-- Main Content -->
+                <main class="main minh-100vh">
+                    @yield('content')
+                </main>
         <!-- Footer -->
-        <footer class="footer text-white" style="background-image: url(img/footer-bg.jpg)">
+        <footer class="footer text-white" style="background-image: url(../assets/img/footer-bg.jpg)">
             <div class="container d-flex h-100">
                 <div class="row flex-grow-1">
                     <div class="col-lg-3 pt-3 ext-s position-relative bg-secondary text-center text-lg-start position-relative">
                         <div class="d-flex flex-column h-100">
                             <div class="pt-5 pt-lg-8 pb-4">
-                                <img src="img/logo-small.svg" alt="" width="92" class="mb-4" />
+                                <img src="../assets/img/logo-small.svg" alt="" width="92" class="mb-4" />
                                 <p class="mb-4 mt-3 fs--1">New York, NY<br />
                                 62 Birchpond St.<br />
                                 Crystal Lake, NY 11762</p>
-        
+
                                 <p class="fs--1"><a href="#" class="text-white"><i class="zmdi zmdi-phone zmdi-hc-fw me-1"></i>+1-202-555-0149</a><br />
                                 <a href="#" class="text-white"><i class="zmdi zmdi-email zmdi-hc-fw me-1"></i>info@spyre.com</a></p>
                             </div>
@@ -291,16 +289,16 @@
         <!-- End of Footer -->
 
 
-    <!-- Core Javascripts -->
-    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Core Javascripts -->
+        <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Vendor Javascripts -->
-    <script src="assets/vendor/rellax/rellax.min.js"></script>
-    <script src="assets/vendor/jquery.mb.vimeo_player/dist/jquery.mb.vimeo_player.min.js"></script>
+        <!-- Vendor Javascripts -->
+        <script src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="../assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 
-    <!-- Theme Javascripts -->
-    <script src="assets/js/theme.js"></script>
-</body>
+        <!-- Theme Javascripts -->
+        <script src="../assets/js/theme.js"></script>
+    </body>
 </html>
