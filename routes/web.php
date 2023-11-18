@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
@@ -14,16 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // All blog posts
-Route::get('/', function () {
-    return view('posts', [
-        'heading' => 'Latest Posts',
-        'posts' => Post::all()
-    ]);
-});
+Route::get('/', [PostController::class, 'index']);
 
 // Single blog post
-Route::get('posts/{id}', function ($id) {
-    return view('post', [
-        'post' => Post::find($id)
-    ]);
-});
+Route::get('posts/{post}', [PostController::class, 'show']);

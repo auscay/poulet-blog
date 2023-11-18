@@ -49,7 +49,7 @@
         <!-- Header -->
         <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
-                <a class="navbar-brand me-lg-5 me-xl-7" href="../pages/index.html">
+                <a class="navbar-brand me-lg-5 me-xl-7" href="/">
                     <img src="../img/logo.png" class="d-none d-lg-block" alt="Spyre" width="130" />
                     <img src="../img/logo.png" class="d-block d-lg-none" alt="Spyre" width="100" />
                 </a>
@@ -193,7 +193,7 @@
 
                 <!-- Main Content -->
                 <main class="main minh-100vh">
-                    @yield('content')
+                    {{$slot}}
                 </main>
         <!-- Footer -->
         <footer class="footer text-white" style="background-image: url(../assets/img/footer-bg.jpg)">

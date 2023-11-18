@@ -48,7 +48,7 @@
         <!-- Header -->
         <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
-                <a class="navbar-brand me-lg-5 me-xl-7" href="../pages/index.html">
+                <a class="navbar-brand me-lg-5 me-xl-7" href="/">
                     <img src="img/logo.png" class="d-none d-lg-block" alt="Spyre" width="130" />
                     <img src="img/logo.png" class="d-block d-lg-none" alt="Spyre" width="100" />
                 </a>
@@ -56,7 +56,7 @@
                 <span class="navbar-text flex-fill d-none d-md-inline-block text-white">
                     Contact us: <a href="#" class="ps-2 text-white">info@spyre.com</a><a href="#" class="ps-5 text-white">+1-202-555-0149</a>
                 </span>
-
+                
                 <div class="search d-none d-lg-flex justify-content-end ms-auto me-2">
                     <input class="form-control me-2" type="text">
                     <i class="zmdi zmdi-search"></i>
@@ -195,7 +195,7 @@
 
             <!-- Main Content -->
             <main class="main minh-100vh">
-            @yield('content')
+            {{$slot}}
             </main>
         <!-- Footer -->
         <footer class="footer text-white" style="background-image: url(img/footer-bg.jpg)">

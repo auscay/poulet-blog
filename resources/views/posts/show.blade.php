@@ -1,6 +1,4 @@
-@extends('single-layout')
-
-@section('content')
+<x-single-layout>
 
 @include('partials._single-hero')
 
@@ -46,13 +44,7 @@
                 </div>
 
                 <h5 class="mb-4 text-uppercase text-600">Tags</h5>
-                <div class="mb-5 mb-lg-6">
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Security</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Vestibulum</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Dolor</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Suspendisse</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Consectetur</a>
-                </div>
+                <x-post-tags :tagsCsv="$post->tags" />
 
                 <h5 class="mb-4 text-uppercase text-600">Categories</h5>
                 <ul class="mb-5 mb-lg-6 ps-4 text-600">
@@ -69,4 +61,4 @@
 </section>
 <!-- End of Section -->
 
-@endsection
+</x-single-layout>  

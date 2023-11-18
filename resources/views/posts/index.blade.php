@@ -1,6 +1,4 @@
-@extends('layout')
-
-@section('content')
+<x-layout>
 
 @include('partials._hero')
     
@@ -11,17 +9,8 @@
                 @unless (count($posts) == 0)
 
                 @foreach ($posts as $post)
-                <div class="mb-8">
-                    <h2 class="mb-4 text-uppercase"><a href="/posts/{{$post->id}}" class="text-body">{{$post->title}}</a></h2>
-                    <p class="text-700 fw-medium">{{$post->pretext}}</p>
-                    <div class="mt-4 d-flex justify-content-between">
-                        <div class="w-50">
-                            <img src="{{asset('img/no-image.png')}}" alt="" class="rounded-circle float-start me-2" width="40" height="40" />
-                            <p class="fs--1 lh-13 text-700">{{$post->author}}<br /><span class="fs--3">{{$post->created_at}}</span></p>
-                        </div>
-                        <a href="/posts/{{$post->id}}" class="h6 fw-bold text-uppercase text-primary pt-3">Read more<i class="zmdi zmdi-chevron-right ps-4"></i></a>
-                    </div>
-                </div>
+                
+                <x-post-card :post="$post" />
                 
                 @endforeach
 
@@ -41,13 +30,7 @@
                 </div>
 
                 <h5 class="mb-4 text-uppercase text-600">Tags</h5>
-                <div class="mb-5 mb-lg-6">
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Security</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Vestibulum</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Dolor</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Suspendisse</a>
-                    <a href="#" class="badge badge-light py-2 px-4 me-2 mb-2 text-700 text-uppercase fs--2">Consectetur</a>
-                </div>
+                <x-post-tags :tagsCsv="$post->tags" />
 
                 <h5 class="mb-4 text-uppercase text-600">Categories</h5>
                 <ul class="mb-5 mb-lg-6 ps-4 text-600">
@@ -63,4 +46,4 @@
     </div>
 </section>
 
-@endsection
+</x-layout>
