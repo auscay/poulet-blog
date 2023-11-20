@@ -17,5 +17,24 @@ use Illuminate\Support\Facades\Route;
 // All blog posts
 Route::get('/', [PostController::class, 'index']);
 
+// Show create post form
+Route::get('posts/create', [PostController::class, 'create']);
+
+// Store posts data
+Route::post('posts', [PostController::class, 'store']);
+
+// Show edit post form
+Route::get('posts/{post}/edit', [PostController::class, 'edit']);
+
+// Update post data
+Route::put('posts/{post}', [PostController::class, 'update']);
+
+// Delete post data
+Route::delete('posts/{post}', [PostController::class, 'destroy']);
+
 // Single blog post
 Route::get('posts/{post}', [PostController::class, 'show']);
+
+
+
+

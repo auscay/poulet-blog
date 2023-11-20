@@ -9,23 +9,21 @@
             <div class="col-lg-8 order-lg-2 pb-6 pb-lg-0">
                 <h2 class="mb-5 text-uppercase">{{$post->title}}</h2>
                 <figure class="figure mb-4">
-                    <img src="img/img-24.jpg" class="pt-2 figure-img img-fluid w-100" alt="" />
+                    <img src="{{$post->photo ? asset('storage/' . $post->photo) : asset('img/no-image.png')}}" class="pt-2 figure-img img-fluid w-100" alt="" />
                     <figcaption class="figure-caption text-end fst-italic">{{$post->pretext}}</figcaption>
                 </figure>
                 <p class="mb-4 text-800 fw-medium">{{$post->content}}</p>
                 
-                <div class="row mb-4">
-                    <div class="col-lg-4 mb-4">
-                        <a data-fancybox="gallery" href="../assets/img/img-25.jpg"><img src="../assets/img/img-25.jpg" class="img-fluid w-100" alt="" /></a>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <a href="/posts/{{$post->id}}/edit" type="submit" name="submit" class="btn btn-primary btn-block">Edit Post<i class="zmdi zmdi-mail-send ms-2"></i></a>
                     </div>
-                    <div class="col-lg-8 mb-4">
-                        <a data-fancybox="gallery" href="../assets/img/img-26.jpg"><img src="../assets/img/img-26.jpg" class="img-fluid w-100" alt="" /></a>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a data-fancybox="gallery" href="../assets/img/img-27.jpg"><img src="../assets/img/img-27.jpg" class="img-fluid w-100" alt="" /></a>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a data-fancybox="gallery" href="../assets/img/img-28.jpg"><img src="../assets/img/img-28.jpg" class="img-fluid w-100" alt="" /></a>
+                    <div class="col-md-6">
+                        <form method="POST" action="/posts/{{$post->id}}">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" name="submit" class="btn btn-primary btn-block">Delete<i class="zmdi zmdi-delete ms-2"></i></button>
+                        </form>
                     </div>
                 </div>
                 
@@ -58,6 +56,8 @@
             </div>
         </div>
     </div>
+    
+    
 </section>
 <!-- End of Section -->
 

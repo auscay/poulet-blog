@@ -14,8 +14,6 @@
                 
                 @endforeach
 
-                
-
                 @else
                     <p>No posts found</p>
                 @endunless
@@ -45,5 +43,9 @@
         </div>
     </div>
 </section>
+<div class="pagination">
+    {{ $posts->links() }}
+</div>
+
 
 </x-layout>

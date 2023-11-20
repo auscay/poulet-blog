@@ -9,6 +9,8 @@ class Post extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['title', 'author', 'slug', 'pretext', 'tags', 'location', 'photo', 'content'];
+
     public function scopeFilter($query, array $filters) {
         if ($filters['tag'] ?? false) {
             $query->where('tags', 'like', '%' . request('tag') . '%');

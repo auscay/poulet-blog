@@ -108,7 +108,7 @@
                                     </li>
                                     <li class="spyre-nav-item"><a href="../docs/animations.html" class="spyre-nav-link">Components</a></li>
                                     <li class="spyre-nav-item"><a href="../docs/index.html" class="spyre-nav-link">Docs</a></li>
-                                    <li class="spyre-nav-item"><a href="https://themes.getbootstrap.com/product/spyre-slick-contemporary-multipurpose-theme" target="_blank" class="spyre-nav-link">Purchase</a></li>
+                                    <li class="spyre-nav-item"><a href="/posts/create" class="spyre-nav-link">Purchase</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -299,6 +299,7 @@
         <script src="../assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 
         <!-- Theme Javascripts -->
+        <script src="//unpkg.com/alpinejs" defer></script>
         <script src="../assets/js/theme.js"></script>
     </body>
 </html>

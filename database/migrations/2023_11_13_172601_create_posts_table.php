@@ -20,6 +20,7 @@ return new class extends Migration
             $table->longText('content');
             $table->string('tags');
             $table->string('location');
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }
