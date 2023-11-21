@@ -97,34 +97,8 @@
                     <div class="row">
                         <div class="spyre-navbar-nav-container col-md-6 col-lg-5 col-xl-4 bg-white ext-s position-relative">
                             <nav class="spyre-navbar-nav">
-                                <ul class="spyre-nav">
-                                    <li class="spyre-nav-item"><a href="../pages/index.html" class="spyre-nav-link">Overview</a></li>
-                                    <li class="spyre-nav-item dropdown">
-                                        <a href="#" class="spyre-nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li class="dropdown-menu-item"><a href="../pages/home.html" class="dropdown-menu-link">Homepage</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/services.html" class="dropdown-menu-link">Services</a></li>
-                                            <li class="dropdown-menu-item active"><a href="../pages/blog.html" class="dropdown-menu-link">Blog</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/blog-single.html" class="dropdown-menu-link">Blog single</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/portfolio.html" class="dropdown-menu-link">Portfolio</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/about.html" class="dropdown-menu-link">About</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/contact.html" class="dropdown-menu-link">Contact</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/team.html" class="dropdown-menu-link">Team</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/faq.html" class="dropdown-menu-link">FAQ</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/pricing.html" class="dropdown-menu-link">Pricing</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/careers.html" class="dropdown-menu-link">Careers</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/careers-single.html" class="dropdown-menu-link">Careers single</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/coming-soon.html" class="dropdown-menu-link">Coming soon</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/404.html" class="dropdown-menu-link">404</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/sign-in.html" class="dropdown-menu-link">Sign In</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/sign-up.html" class="dropdown-menu-link">Sing Up</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/recover-account.html" class="dropdown-menu-link">Recover account</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="spyre-nav-item"><a href="../docs/animations.html" class="spyre-nav-link">Components</a></li>
-                                    <li class="spyre-nav-item"><a href="../docs/index.html" class="spyre-nav-link">Docs</a></li>
-                                    <li class="spyre-nav-item"><a href="/posts/create" class="spyre-nav-link">Purchase</a></li>
-                                </ul>
+                                @include('partials._nav')
+
                             </nav>
                         </div>
         

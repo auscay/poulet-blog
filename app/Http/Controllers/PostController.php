@@ -44,6 +44,9 @@ class PostController extends Controller
             $formFields['photo'] = $request->file('photo')->store('photos', 'public');
         }
 
+        $formFields['user_id'] = auth()->id();
+
+
         Post::create($formFields);
 
         return redirect('/')->with('message', 'Post Created Successfully');
@@ -51,11 +54,22 @@ class PostController extends Controller
 
     //show edit post form
     public function edit(Post $post) {
+        //user authorization
+        if ($post->user_id != auth()->id()) {
+            abort(403, 'Unauthorized Action');
+        }
+        
         return view('posts.edit', ['post' => $post]);
     }
 
     //update blog posts
     public function update(Request $request, Post $post) {
+
+        //user authorization
+        if ($post->user_id != auth()->id()) {
+            abort(403, 'Unauthorized Action');
+        }
+
         $formFields = $request->validate([
             'title' => 'required',
             'author' => 'required',
@@ -70,15 +84,29 @@ class PostController extends Controller
             $formFields['photo'] = $request->file('photo')->store('photos', 'public');
         }
 
+        $formFields['user_id'] = auth()->id();
+
         $post->update($formFields);
 
         return back()->with('message', 'Post Updated Successfully');
     }
 
-    // delete blog posts
+    // Delete blog posts
     public function destroy(Post $post) {
+        //user authorization
+        if ($post->user_id != auth()->id()) {
+            abort(403, 'Unauthorized Action');
+        }
+
         $post->delete();
         return redirect('/')->with('message', 'Post Deleted Successfully');
     }
 
+    // Manage blog post
+    public function manage() {
+      return view('posts.manage', ['posts' => auth()->user()->posts()->get()]);  
+    } 
+
 }
+
+    

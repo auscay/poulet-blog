@@ -15,16 +15,7 @@
                 <p class="mb-4 text-800 fw-medium">{{$post->content}}</p>
                 
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <a href="/posts/{{$post->id}}/edit" type="submit" name="submit" class="btn btn-primary btn-block">Edit Post<i class="zmdi zmdi-mail-send ms-2"></i></a>
-                    </div>
-                    <div class="col-md-6">
-                        <form method="POST" action="/posts/{{$post->id}}">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" name="submit" class="btn btn-primary btn-block">Delete<i class="zmdi zmdi-delete ms-2"></i></button>
-                        </form>
-                    </div>
+                   
                 </div>
                 
             </div>
