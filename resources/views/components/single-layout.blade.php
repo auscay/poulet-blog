@@ -25,6 +25,9 @@
         <!-- Theme Stylesheets -->
         <link href="../assets/css/theme.css" rel="stylesheet">
 
+        <!-- Mystyles-->
+        <link href="../assets/css/mystyle.css" rel="stylesheet">
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129313359-1"></script>
         <script>
