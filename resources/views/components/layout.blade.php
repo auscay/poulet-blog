@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Page Title -->
-        <title>Blog | Spyre - Slick contemporary multipurpose theme</title>
+        <title>Poulet Blog</title>
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
         <link rel="manifest" href="img/favicons/site.webmanifest">
-        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#f23838">
+        <link rel="mask-icon" href="img/logo.png" color="#f23838">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
