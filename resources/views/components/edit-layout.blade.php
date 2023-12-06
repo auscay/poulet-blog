@@ -74,7 +74,7 @@
                 </a>
 
                 <span class="navbar-text flex-fill d-none d-md-inline-block text-white">
-                    Contact us: <a href="#" class="ps-2 text-white">info@spyre.com</a><a href="#" class="ps-5 text-white">+1-202-555-0149</a>
+                    Contact us: <a href="#" class="ps-2 text-white">admin@pouletmedia.ng</a><a href="#" class="ps-5 text-white"></a>
                 </span>
                 
                 <div class="search d-none d-lg-flex justify-content-end ms-auto me-2">
@@ -199,12 +199,10 @@
                         <div class="d-flex flex-column h-100">
                             <div class="pt-5 pt-lg-8 pb-4">
                                 <img src="/img/logo-small.svg" alt="" width="92" class="mb-4" />
-                                <p class="mb-4 mt-3 fs--1">New York, NY<br />
-                                62 Birchpond St.<br />
-                                Crystal Lake, NY 11762</p>
+                                <p class="mb-4 mt-3 fs--1">Lagos, NGN<br /></p>
         
-                                <p class="fs--1"><a href="#" class="text-white"><i class="zmdi zmdi-phone zmdi-hc-fw me-1"></i>+1-202-555-0149</a><br />
-                                <a href="#" class="text-white"><i class="zmdi zmdi-email zmdi-hc-fw me-1"></i>info@spyre.com</a></p>
+                                <p class="fs--1"><a href="#" class="text-white"><i class="zmdi zmdi-phone zmdi-hc-fw me-1"></i></a><br />
+                                <a href="#" class="text-white"><i class="zmdi zmdi-email zmdi-hc-fw me-1"></i>admin@pouletmedia.ng</a></p>
                             </div>
 
                             <ul class="mt-4 mt-lg-auto mb-5 mb-lg-0 list-unstyled list-inline">
@@ -276,7 +274,7 @@
 
                         <div class="mt-auto d-flex justify-content-between">
                             <span class="fs--3 fs-lg--2">&copy; Spyre, 2023 Webinning Ltd.</span>
-                            <div class="fs--3 fs-lg--2"><a href="#" class="me-1 text-white">Privacy Policy</a>|<a href="#" class="ms-1 text-white">Cookie Policy</a></div>
+                            
                         </div>
                     </div>
                 </div>
