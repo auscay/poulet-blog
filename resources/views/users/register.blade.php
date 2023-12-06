@@ -33,7 +33,7 @@
                                 <p class="text-danger text-xs mt-1">{{$message}}</p>
                             @enderror
                         </div>
-                        <button type="submit" name="submit" class="btn btn-lg btn-secondary w-100 mb-4">Sign Up</button>
+                        <button type="submit" name="submit" class="btn btn-lg btn-secondary w-100 mb-4" disabled>Sign Up</button>
 
 
                         <p class="text-center text-600">Already have account? <a href="/login">Sign In</a></p>

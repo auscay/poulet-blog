@@ -1,6 +1,6 @@
 <x-single-layout>
 
-    @include('partials._hero')
+    @include('partials._manage-hero')
 
     <table class="table table-hover">
         <thead>

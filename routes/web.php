@@ -4,6 +4,8 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\NewsApiController;
+use App\Http\Controllers\PostApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +58,9 @@ Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 
 // Manage posts
 Route::get('/posts/manage', [PostController::class, 'manage']);
+
+// All API blog posts
+Route::get('/everything', [PostApiController::class, 'index']);
 
 
 
